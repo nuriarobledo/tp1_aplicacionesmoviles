@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">tp1_aplicacionesmoviles</string>
+
+    <string name="tvRegistro">Registro</string>
+    <string name="tvNombre">Nombre</string>
+    <string name="etNombre">Ingrese su nombre</string>
+    <string name="tvEmail">Email</string>
+    <string name="etEmailAddress">Ingrese su email</string>
+    <string name="tvContrasena">Contraseña</string>
+    <string name="tvRepetirContrasena">Ingrese su contraseña nuevamente</string>
+    <string name="btnRegistrarme">Registrarme</string>
+    <string name="btnCancelar">Cancelar</string>
+    <string name="etTextPasswordDescription">Campo para introducir la contraseña</string>
+
+
+
 </resources>

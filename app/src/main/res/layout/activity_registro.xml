@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro">
+
+
+    <TextView
+        android:id="@+id/tvRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvRegistro"
+        android:textColor="@color/whiteblue"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@+id/container"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <!-- contenedor registro -->
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="360dp"
+        android:layout_height="526dp"
+        android:background="@color/fondoRegistro"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.462">
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/tvNombre"
+            android:textColor="@color/whiteblue"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvRegistro" />
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="16dp"
+            android:text="@string/etNombre"
+            android:textColor="@color/instruccion"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNombre" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="@string/tvEmail"
+            android:textColor="@color/whiteblue"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNombre" />
+
+        <EditText
+            android:id="@+id/etEmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:text="@string/etEmailAddress"
+            android:textColor="@color/instruccion"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+        <TextView
+            android:id="@+id/tvContrasena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/tvContrasena"
+            android:textColor="@color/whiteblue"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etEmailAddress" />
+
+        <EditText
+            android:id="@+id/etTextPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/etTextPasswordDescription"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textColor="@color/instruccion"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvContrasena" />
+
+        <TextView
+            android:id="@+id/tvRepetirContrasena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/tvRepetirContrasena"
+            android:textColor="@color/whiteblue"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etTextPassword" />
+
+        <EditText
+            android:id="@+id/etTextPassword2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/etTextPasswordDescription"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textColor="@color/instruccion"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvRepetirContrasena" />
+
+    </LinearLayout>
+
+    <!-- Contenedor botones -->
+    <LinearLayout
+        android:id="@+id/containerBotones"
+        android:layout_width="296dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="56dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container">
+
+        <Button
+            android:id="@+id/btnRegistrarme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="@color/blue"
+            android:text="@string/btnRegistrarme"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/container" />
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/lightgray"
+            android:text="@string/btnCancelar"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/container" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
