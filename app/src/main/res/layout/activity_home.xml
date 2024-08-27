@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/midnight_blue"
+    tools:context=".Home">
+
+    <TextView
+        android:id="@+id/tvBienvenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/tvBienvenido"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/rgSO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- RadioGroup para seleccionar el SO-->
+
+    <TextView
+        android:id="@+id/tvPlataforma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/tvPlataforma"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvBienvenido" />
+
+    <RadioGroup
+        android:id="@+id/rgSO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_background"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPlataforma">
+
+        <RadioButton
+            android:id="@+id/rbAndroid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:padding="8dp"
+            android:text="@string/tvAndroid"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/rbIos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:buttonTint="#FFFFFF"
+            android:padding="8dp"
+            android:text="@string/tvIos"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <!-- ImageView para mostrar el logo-->
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/dLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rgSO" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/formPreferencias"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/preferencia_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivLogo">
+        <!-- checkbox para las preferencias-->
+        <TextView
+            android:id="@+id/tvPreferencias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/tvPreferencia"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"  />
+
+
+        <CheckBox
+            android:id="@+id/cbProgramacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cbProgramacion"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@id/tvPreferencias"
+            app:layout_constraintTop_toBottomOf="@id/tvPreferencias" />
+
+        <CheckBox
+            android:id="@+id/cbRedes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cbRedes"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@id/cbProgramacion"
+            app:layout_constraintTop_toBottomOf="@id/cbProgramacion" />
+
+        <CheckBox
+            android:id="@+id/cbSeguridad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cbSeguridad"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@id/cbRedes"
+            app:layout_constraintTop_toBottomOf="@id/cbRedes" />
+
+        <CheckBox
+            android:id="@+id/cbHardware"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cbHardware"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@id/cbSeguridad"
+            app:layout_constraintTop_toBottomOf="@id/cbSeguridad" />
+
+        <CheckBox
+            android:id="@+id/cbOtra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cbOtra"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@id/cbHardware"
+            app:layout_constraintTop_toBottomOf="@id/cbHardware" />
+
+        <!-- ingresar otra preferencia-->
+        <EditText
+            android:id="@+id/etPreferencia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/etPreferencia"
+            android:textColorHint="@color/white"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cbOtra" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
