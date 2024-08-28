@@ -31,5 +31,5 @@
     <string name="cbSeguridad">Seguridad</string>
     <string name="cbHardware">Hardware</string>
     <string name="cbOtra">Otra</string>
-    <string name="etPreferencia">Ingrese su preferencia:</string>
+    <string name="etPreferencia">Ingrese su preferencia</string>
 </resources>
