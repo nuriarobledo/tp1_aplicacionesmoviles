@@ -1,6 +1,11 @@
 *.iml
 .gradle
+/gradle.properties
+/gradlew
+/gradlew.bat
+/settings.gradle.kts
 /local.properties
+.idea/
 /.idea/caches
 /.idea/libraries
 /.idea/modules.xml
@@ -9,6 +14,8 @@
 /.idea/assetWizardSettings.xml
 .DS_Store
 /build
+/build.gradle.kts
+
 /captures
 .externalNativeBuild
 .cxx

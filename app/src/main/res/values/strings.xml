@@ -1,11 +1,3 @@
 <resources>
-    <string name="app_name">TP1</string>
-    <string name="tvIniciarSesion">Aplicaciones Móviles</string>
-    <string name="etUsuario">Usuario</string>
-    <string name="etContrasena">Contraseña</string>
-    <string name="tvGrupo8">Grupo 8</string>
-    <string name="btnIniciarSesion">Log In</string>
-    <string name="tvNoTienesCuenta">¿No tienes cuenta?</string>
-    <string name="btnRegistrate">Regístrate</string>
-
+    <string name="app_name">tp1_aplicacionesmoviles</string>
 </resources>
