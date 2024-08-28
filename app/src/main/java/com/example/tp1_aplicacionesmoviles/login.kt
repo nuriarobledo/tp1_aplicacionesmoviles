@@ -39,7 +39,7 @@ class Login : AppCompatActivity() {
 
             if (etUsuario == "Juan Torres" && etContrasena == "1234utn"){
                 Log.i(tag, "Login correcto")
-                val intent = Intent(this, "WelcomeActivity"::class.java).apply {
+                val intent = Intent(this, "Home"::class.java).apply {
                     putExtra("USERNAME", etUsuario)
                 }
                 startActivity(intent)
@@ -55,7 +55,7 @@ class Login : AppCompatActivity() {
         btnRegistrate.setOnClickListener{
             Log.d(tag, "Botón de registro presionado")
 
-            val intent = Intent(this, "RegisterActivity"::class.java)
+            val intent = Intent(this, "Registro"::class.java)
             startActivity(intent)
         }
     }
