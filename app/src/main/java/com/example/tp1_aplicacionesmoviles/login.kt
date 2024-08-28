@@ -32,22 +32,22 @@ class Login : AppCompatActivity() {
 
             val etContrasena = findViewById<EditText>(R.id.etContrasena).text.toString()
 
-            // Agregar logs para depuración
+            // logs
 
             Log.d(tag, "Usuario ingresado: $etUsuario")
             Log.d(tag, "Contraseña ingresada: $etContrasena")
 
             if (etUsuario == "Juan Torres" && etContrasena == "1234utn"){
-                Log.i(tag, "Login correcto")
+                Log.i(tag, "Inicio de sesión exitoso")
                 val intent = Intent(this, "Home"::class.java).apply {
                     putExtra("USERNAME", etUsuario)
                 }
                 startActivity(intent)
-                Toast.makeText(this, "Login correcto", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "¡Bienvenido, $etUsuario!", Toast.LENGTH_SHORT).show()
             } else {
-                Log.e(tag, "Usuario o contraseña incorrectos")
+                Log.e(tag, "Credenciales incorrectas")
 
-                Toast.makeText(this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "El usuario o la contraseña son incorrectos.", Toast.LENGTH_SHORT).show()
             }
         }
 

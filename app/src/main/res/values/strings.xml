@@ -20,7 +20,7 @@
     <string name="btnCancelar">Cancelar</string>
     <string name="etTextPasswordDescription">Campo para introducir la contraseña</string>
     <!-- home -->
-    <string name="tvBienvenido">Bienvenido a la aplicación Juan Torres!</string>
+    <string name="tvBienvenido">Bienvenido/a a la aplicación</string>
     <string name="tvPlataforma">Plataforma utilizada:</string>
     <string name="tvAndroid">Android</string>
     <string name="tvIos">IOS</string>

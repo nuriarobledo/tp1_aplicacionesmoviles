@@ -6,6 +6,7 @@ import android.widget.RadioGroup
 import android.widget.CheckBox
 import android.widget.EditText
 import android.view.View
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -23,6 +24,11 @@ class Home : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        //usuario que ingreso
+        val user = intent.getStringExtra("USERNAME")
+        val mensaje = findViewById<TextView>(R.id.tvBienvenido)
+        mensaje.text = "Bienvenido/a a la aplicación $user"
 
         //componentes UI
         val rgSO = findViewById<RadioGroup>(R.id.rgSO)
