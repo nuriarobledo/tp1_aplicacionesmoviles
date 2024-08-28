@@ -57,7 +57,7 @@ class Registro : AppCompatActivity() {
 
             if (valid) {
                 Toast.makeText(this, "Se registró correctamente", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, "login"::class.java)
+                val intent = Intent(this, Login::class.java)
                 startActivity(intent)
             }
         }
