@@ -19,4 +19,17 @@
     <string name="btnRegistrarme">Registrarme</string>
     <string name="btnCancelar">Cancelar</string>
     <string name="etTextPasswordDescription">Campo para introducir la contraseña</string>
+    <!-- home -->
+    <string name="tvBienvenido">Bienvenido a la aplicación Juan Torres!</string>
+    <string name="tvPlataforma">Plataforma utilizada:</string>
+    <string name="tvAndroid">Android</string>
+    <string name="tvIos">IOS</string>
+    <string name="dLogo">Logo del SO</string>
+    <string name="tvPreferencia">Preferencias:</string>
+    <string name="cbProgramacion">Programación</string>
+    <string name="cbRedes">Redes</string>
+    <string name="cbSeguridad">Seguridad</string>
+    <string name="cbHardware">Hardware</string>
+    <string name="cbOtra">Otra</string>
+    <string name="etPreferencia">Ingrese su preferencia:</string>
 </resources>

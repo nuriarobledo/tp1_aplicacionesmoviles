@@ -7,4 +7,8 @@
     <color name="blue">#0047D7</color>
     <color name="fondoRegistro">#F0F0ECEC</color>
     <color name="instruccion">#2F2F2F</color>
+     <color name="sky_blue">#87CEEB</color>
+    <color name="midnight_blue">#003366</color>
+    <color name="light_midnight_blue">#00509E</color>
+
 </resources>
